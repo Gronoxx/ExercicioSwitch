@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    int a,b,operador;
+    printf("Escolha dois numeros:\n");
+    scanf("%d\n%d", &a,&b);
+    printf("Escolha uma operacao:\n 1-> Multiplicacao\n 2-> Divisao\n 3-> Soma\n 4->Subtracao\n ");
+    scanf("%d", &operador );
+    switch(operador)
+    {
+        case 1:
+            printf("%d", a*b);
+            break;
+        case 2:
+            printf("%d", a/b);
+            break;
+        case 3:
+            printf("%d", a+b);
+            break;
+        case 4:
+            printf("%d", a-b);
+            break;
+    }
+    return 0;
+}
